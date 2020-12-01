@@ -5,11 +5,14 @@ import Menu from './components/MenuComponent';
 import './App.css';
 import { DISHES } from './shared/dishes';
 
+
 class App extends Component {
+    
   constructor(props) {
     super(props);
     this.state = {
-      dishes: DISHES
+      // this dishes object will be passed child component "Menu"
+      dishes: DISHES,
     };
   }
 
